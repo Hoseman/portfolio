@@ -1,0 +1,72 @@
+.footer {
+    background: $darkestgrey;
+    width: 100%;
+    padding: 4rem 0 2rem 0rem;
+    @include iphone {
+        padding: 7rem 0 4rem 0rem;
+    }
+    &__column {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 1.8rem;
+        @include iphone {
+            margin-left: 3rem;
+        }
+        @include tablet {
+            margin-left: 1.8rem;
+        }
+        @include laptop {
+            margin-left: 16.5rem;
+        }
+    }
+    &__col {
+        width: 100%;
+        @include tablet {
+            width: 50%;
+        }
+        @include laptop {
+            width: 25%;
+        }
+    }
+    &__heading {
+        font-family: $heading-font-family;
+        color: $primary-blue;
+        font-size: 1.7rem;
+        font-weight: 800;
+        margin: 1rem 0 1rem 0;
+        @include laptop {
+            margin: 0 0 1.7rem 0;
+        }
+    }
+    &__menu {
+        margin: 0;
+        padding: 0;
+    }
+    &__menulist {
+        display: block;
+    }
+    &__menulist a {
+        color: $white;
+        text-decoration: none;
+        font-size: 1.05rem;
+        line-height: 1.5rem;
+    }
+    &__bottom {
+        border-top: 1px dashed $darkgrey;
+        width: auto;
+        padding: 1.4rem 0;
+        margin-left: 1.8rem;
+        margin-right: 1.8rem !important;
+        margin-left: 1.8rem;
+        @include tablet {
+            margin-right: 1.8rem !important;
+        }
+        @include laptop {
+            margin-left: 16.5rem;
+            margin-right: 16.5rem !important;
+        }
+        color: $white;
+        font-size: 0.9rem;
+        margin-top:3.3rem;
+    }
+}

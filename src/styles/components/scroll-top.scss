@@ -1,0 +1,23 @@
+.scrolltotop {
+    border: 0;
+    width: 45px;
+    height: 45px;
+    background: $midgrey;
+    border-radius: 0.5rem;
+    position: fixed;
+    right: 1.8rem;
+    bottom: 1.8rem;
+    opacity: 0.6;
+    transition: opacity 0.15s ease-in;
+    @include tablet {
+        right: 3rem;
+        bottom: 3rem;
+    }
+    &__img {
+        width:60%;
+        padding: 20%;
+    }
+}
+.scrolltotop:hover {
+    opacity: 1;
+}

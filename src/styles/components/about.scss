@@ -1,0 +1,142 @@
+.about {
+    padding: 0.7rem 0;
+    @include iphone {
+        padding: 1rem 0;
+    }
+    @include tablet {
+        padding: 0 0 5rem 0;
+    }
+    &__title {
+        color: $white;
+        font-family: $heading-font-family;
+        font-size: 1.7rem;
+        @include iphone {
+            font-size: 2.1rem;
+        }
+    }
+    &__content {
+        color: $white;
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+        @include desktop-small {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+    }
+    &__signature {
+        width: 200px;
+        @include iphone {
+            width: 50%;
+        }
+        @include laptop {
+            width: 75%;
+        }
+        @include desktop-small {
+            width: 310px;
+        }
+        margin-top: 0.5rem;
+    }
+    &__column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__col:nth-child(1) {
+        width: 100%;
+        margin-right: 0%;
+        position: relative;
+        @include laptop {
+            width: 48%;
+            margin-right: 5%;
+        }
+        @include desktop-small {
+            width: 51%;
+            margin-right: 11%;
+        }
+    }
+    &__col:nth-child(2) {
+        width: 100%;
+        position: relative;
+        @include laptop {
+            width: 47%;
+        }
+        @include desktop-small {
+            width: 38%;
+        }
+    }
+    
+    // @keyframes about_left_animation {
+    //     0%   {margin-top: 0;}
+    //     50%  {margin-top: -1rem;}
+    //     100%  {margin-top: 0;}
+    // }
+    // @keyframes about_right_animation {
+    //     0%   {margin-top: 0;}
+    //     50%  {margin-top: -1rem;}
+    //     100%  {margin-top: 0;}
+    // }
+    &__subtitle {
+        color: $white;
+        font-family: $heading-font-family;
+        font-size: 1.6rem;
+        margin-top: 2.45rem;
+    }
+    &__info {
+        color: $white;
+        font-family: $heading-font-family;
+        font-size: 1.2rem;
+        @include desktop-small {
+            font-size: 1.3rem;
+        }
+        margin: 0 0 0.8rem 0;
+    }
+    &__address {
+        color: $white;
+        font-family: $body-font-family;
+        font-size: 1.3rem;
+        margin: 0;
+        font-weight: normal;
+        font-size: 1.17rem;
+        margin-bottom: 1.5rem;
+        line-height: 1.7rem;
+    }
+    &__infodetail {
+        font-family: $body-font-family;
+        margin-left: 0.5rem;
+        font-weight: normal;
+        font-size: 1.07rem;
+        @include desktop-small {
+            font-size: 1.17rem;
+        }
+    }
+    &__underline {
+        border-bottom: 2px solid $primary-blue;
+        font-weight: 800;
+    }
+    &__download {
+        font-family: $heading-font-family;
+        border: 2px solid $primary-blue;
+        padding: 0.8rem 2.2rem;
+        color: $primary-blue;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: 0.05rem;
+        font-size: 0.98rem;
+        transition: background 0.15s ease-in;
+    }
+    &__download:hover {
+        background: #08597d;
+        color: $white;
+    }
+}
+
+.scrolled-past-500px {
+    animation-name: about_us_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes about_us_left {
+    0%   {margin-top: 0;}
+    50%  {margin-top: -1rem;}
+    100% {margin-top: 0;}
+  }

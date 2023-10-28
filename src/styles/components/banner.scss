@@ -1,0 +1,480 @@
+.banner {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    @include iphone {
+        height: 380px;
+    }
+    @include laptop {
+        height: 390px;
+    }
+    @include desktop-small {
+        height: 500px;
+    }
+    @include desktop {
+        height: 580px;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        height: 300px;
+        @include iphone {
+            height: 380px;
+        }
+        @include laptop {
+            height: 390px;
+        }
+        @include desktop-small {
+            height: 500px;
+        }
+        @include desktop {
+            height: 580px;
+        }
+    }
+    &__container {
+        max-width: 1400px;
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 1.8rem;
+        width: calc(100% - 3.6rem);
+        margin-top: 0.6rem;
+        @include iphone {
+            padding: 0 3rem;
+            width: calc(100% - 6rem);
+            margin-top: 0;
+        }
+        z-index: 9;
+    }
+    &__title {
+        opacity: 1;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        @include iphone {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include laptop {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include desktop-small {
+            font-size: 5rem;
+            line-height: 5.35rem;
+        }
+        @include desktop {
+            font-size: 6.5rem;
+            line-height: 6.35rem;
+        }
+        margin: 0 0 2.3rem 0;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &__title_1 {
+        animation-name: banner_title_1;
+        animation-duration: 45s;
+        opacity: 1;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        @include iphone {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include laptop {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include desktop-small {
+            font-size: 5rem;
+            line-height: 5.35rem;
+        }
+        @include desktop {
+            font-size: 6.5rem;
+            line-height: 6.35rem;
+        }
+        margin: 0 0 2.3rem 0;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &__title_2 {
+        animation-name: banner_title_2;
+        animation-duration: 45s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        @include iphone {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include laptop {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include desktop-small {
+            font-size: 5rem;
+            line-height: 5.35rem;
+        }
+        @include desktop {
+            font-size: 6.5rem;
+            line-height: 6.35rem;
+        }
+        margin: 0 0 2.3rem 0;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &__title_3 {
+        animation-name: banner_title_3;
+        animation-duration: 45s;
+        opacity: 0;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        font-family: 'Playfair Display', serif;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        @include iphone {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include laptop {
+            font-size: 4rem;
+            line-height: 4.35rem;
+        }
+        @include desktop-small {
+            font-size: 5rem;
+            line-height: 5.35rem;
+        }
+        @include desktop {
+            font-size: 6.5rem;
+            line-height: 6.35rem;
+        }
+        margin: 0 0 2.3rem 0;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    &__italic {
+        font-style: italic;
+        display: block;
+    }
+    &__card {
+        width: 100% !important;
+    }
+}
+.banner__img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 300px;
+    @include iphone {
+        height: 380px;
+    }
+    @include laptop {
+        height: 390px;
+    }
+    @include desktop-small {
+        height: 500px;
+    }
+    @include desktop {
+        height: 580px;
+    }
+    object-fit: cover;
+  }
+.banner__img1 {
+    width: 100%;
+    height: auto;
+    animation-name: banner_1;
+    animation-duration: 45s;
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 300px;
+    @include iphone {
+        height: 380px;
+    }
+    @include laptop {
+        height: 390px;
+    }
+    @include desktop-small {
+        height: 500px;
+    }
+    @include desktop {
+        height: 580px;
+    }
+    object-fit: cover;
+  }
+  @keyframes banner_1 {
+    0%   {opacity: 1;}
+    10%  {opacity: 1;}
+    20%  {opacity: 1;}
+    30%  {opacity: 1}
+    40%  {opacity: 0}
+    50%  {opacity: 0}
+    60%  {opacity: 0}
+    70%  {opacity: 0}
+    80%  {opacity: 0}
+    90%  {opacity: 0}
+    100% {opacity: 0;}
+  }
+  .banner__img2 {
+    width: 100%;
+    height: auto;
+    animation-name: banner_2;
+    animation-duration: 45s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 300px;
+    @include iphone {
+        height: 380px;
+    }
+    @include laptop {
+        height: 390px;
+    }
+    @include desktop-small {
+        height: 500px;
+    }
+    @include desktop {
+        height: 580px;
+    }
+    object-fit: cover;
+  }
+  @keyframes banner_2 {
+    0%   {opacity: 0;}
+    10%  {opacity: 0;}
+    20%  {opacity: 0;}
+    30%  {opacity: 0;}
+    40%  {opacity: 1;}
+    50%  {opacity: 1;}
+    60%  {opacity: 1;}
+    70%  {opacity: 0;}
+    80%  {opacity: 0;}
+    90%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  .banner__img3 {
+    width: 100%;
+    height: auto;
+    animation-name: banner_3;
+    animation-duration: 45s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    height: 300px;
+    @include iphone {
+        height: 380px;
+    }
+    @include laptop {
+        height: 390px;
+    }
+    @include desktop-small {
+        height: 500px;
+    }
+    @include desktop {
+        height: 580px;
+    }
+    object-fit: cover;
+  }
+  @keyframes banner_3 {
+    0%   {opacity: 0;}
+    10%  {opacity: 0;}
+    20%  {opacity: 0;}
+    30%  {opacity: 0;}
+    40%  {opacity: 0;}
+    50%  {opacity: 0;}
+    60%  {opacity: 0;}
+    70%  {opacity: 1;}
+    80%  {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 1;}
+  }
+  
+  .banner__navigation {
+  /*   background: red; */
+    position: absolute;
+    height: 12px;
+    width: 100%;
+    z-index: 5;
+    bottom: 2px;
+  /*   opacity:0.5; */
+  }
+  
+  .banner__navigation1 {
+    width: 33.333%;
+    margin: 0;
+    background: rgba(78, 182, 240, 1.0);
+    height: 12px;
+    display: inline-block;
+    animation-name: banner_navigation_1;
+    animation-duration: 45s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes banner_navigation_1 {
+     0%   {background: rgba(78, 182, 240, 1.0)}
+    10%  {background: rgba(78, 182, 240, 1.0)}
+    20%  {background: rgba(78, 182, 240, 1.0)}
+    30%  {background: rgba(78, 182, 240, 1.0)}
+    40%  {background: rgba(33, 120, 169, 0.8)}
+    50%  {background: rgba(33, 120, 169, 0.8)}
+    60%  {background: rgba(33, 120, 169, 0.8)}
+    70%  {background: rgba(33, 120, 169, 0.8)}
+    80%  {background: rgba(33, 120, 169, 0.8)}
+    90%  {background: rgba(33, 120, 169, 0.8)}
+    100% {background: rgba(33, 120, 169, 0.8)}
+  }
+  .banner__navigation2 {
+    width: 33.333%;
+    margin: 0;
+    background: rgba(33, 120, 169, 0.8);
+    height: 12px;
+    display: inline-block;
+    animation-name: banner_navigation_2;
+    animation-duration: 45s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes banner_navigation_2 {
+    0%   {background: rgba(33, 120, 169, 0.8)}
+    10%  {background: rgba(33, 120, 169, 0.8)}
+    20%  {background: rgba(33, 120, 169, 0.8)}
+    30%  {background: rgba(33, 120, 169, 0.8)}
+    40%  {background: rgba(78, 182, 240, 1.0)}
+    50%  {background: rgba(78, 182, 240, 1.0)}
+    60%  {background: rgba(78, 182, 240, 1.0)}
+    70%  {background: rgba(33, 120, 169, 0.8)}
+    80%  {background: rgba(33, 120, 169, 0.8)}
+    90%  {background: rgba(33, 120, 169, 0.8)}
+    100% {background: rgba(33, 120, 169, 0.8)}
+  }
+  .banner__navigation3 {
+    width: 33.333%;
+    margin: 0;
+    background: rgba(33, 120, 169, 0.8);
+    height: 12px;
+    display: inline-block;
+    animation-name: banner_navigation_3;
+    animation-duration: 45s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  @keyframes banner_navigation_3 {
+    0%   {background: rgba(33, 120, 169, 0.8)}
+    10%  {background: rgba(33, 120, 169, 0.8)}
+    20%  {background: rgba(33, 120, 169, 0.8)}
+    30%  {background: rgba(33, 120, 169, 0.8)}
+    40%  {background: rgba(33, 120, 169, 0.8)}
+    50%  {background: rgba(33, 120, 169, 0.8)}
+    60%  {background: rgba(33, 120, 169, 0.8)}
+    70%  {background: rgba(78, 182, 240, 1.0)}
+    80%  {background: rgba(78, 182, 240, 1.0)}
+    90%  {background: rgba(78, 182, 240, 1.0)}
+    100% {background: rgba(78, 182, 240, 1.0)}
+  }
+
+  @keyframes banner_title_1 {
+    0%   {opacity: 1;}
+    10%  {opacity: 1;}
+    20%  {opacity: 1;}
+    30%  {opacity: 1}
+    40%  {opacity: 0}
+    50%  {opacity: 0}
+    60%  {opacity: 0}
+    70%  {opacity: 0}
+    80%  {opacity: 0}
+    90%  {opacity: 0}
+    100% {opacity: 0;}
+  }
+  @keyframes banner_title_2 {
+    0%   {opacity: 0;}
+    10%  {opacity: 0;}
+    20%  {opacity: 0;}
+    30%  {opacity: 0;}
+    40%  {opacity: 1;}
+    50%  {opacity: 1;}
+    60%  {opacity: 1;}
+    70%  {opacity: 0;}
+    80%  {opacity: 0;}
+    90%  {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  @keyframes banner_title_3 {
+    0%   {opacity: 0;}
+    10%  {opacity: 0;}
+    20%  {opacity: 0;}
+    30%  {opacity: 0;}
+    40%  {opacity: 0;}
+    50%  {opacity: 0;}
+    60%  {opacity: 0;}
+    70%  {opacity: 1;}
+    80%  {opacity: 1;}
+    90%  {opacity: 1;}
+    100% {opacity: 1;}
+  }
+  .bannerportfolio {
+    height: 250px;
+    position: relative;
+    @include iphone {
+        height: 300px;
+    }
+    @include laptop {
+        height: 330px;
+    }
+    @include desktop-small {
+        height: 365px;
+    }
+    @include desktop {
+        height: 390px;
+    }
+    &__img {
+        width: 100%;
+        object-fit: cover;
+        height: 250px;
+        @include iphone {
+            height: 300px;
+        }
+        @include laptop {
+            height: 330px;
+        }
+        @include desktop-small {
+            height: 365px;
+        }
+        @include desktop {
+            height: 390px;
+        }
+    }
+    &__container {
+        max-width: 1400px;
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 1.8rem;
+        width: calc(100% - 3.6rem);
+        margin-top: 0.6rem;
+        @include iphone {
+            padding: 0 3rem;
+            width: calc(100% - 6rem);
+            margin-top: 1.2rem;
+        }
+        z-index: 9;
+    }
+  }

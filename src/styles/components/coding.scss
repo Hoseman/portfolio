@@ -1,0 +1,151 @@
+.coding {
+    margin-bottom: 4rem;
+    &__column {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @include desktop-small {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        grid-gap: 2.5rem;
+    }
+    &__col {
+        width: 100%;
+    }
+    &__skillcard {
+        width: 100%;
+    }
+    &__skilltitle {
+        font-family: $heading-font-family;
+        color: $white;
+        font-size: 0.95rem;
+        @include desktop {
+            font-size: 1.22rem;
+        }
+        font-weight: 800;
+    }
+    &__skillbar {
+        background: $middarkgrey;
+        height: 11px;
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+    &__skillbarscore_1 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 10%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_2 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 30%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_3 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 15%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_4 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 22%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_5 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 33%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_6 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 12%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_7 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 7%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_8 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 27%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_9 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 20%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_10 {
+        background: $primary-blue;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 40%;
+        transition: all 0.9s ease-in;
+    }
+    &__skillbarscore_triangle {
+        width: 0;
+        height: 0;
+        border-left: 13px solid transparent;
+        border-right: 13px solid transparent;
+        border-bottom: 28px solid darken($primary-blue, 10%);
+        position: absolute;
+        right: -5px;
+        bottom: 0;
+    }
+    &__skillbarscore_percent {
+        font-family: $body-font-family;
+        font-size: 0.91rem;
+        @include desktop {
+            font-size: 1.1rem;
+        }
+        color: $white;
+        position: absolute;
+        right: -0.7rem;
+        bottom: 2rem;
+    }
+    &__test {
+        color: white;
+    }
+}
+
+.skillshtml {
+    right: 20%;
+}

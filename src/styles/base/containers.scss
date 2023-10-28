@@ -1,0 +1,32 @@
+.container {
+    width: auto;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.8rem;
+    @include iphone {
+        padding: 0 3rem;
+    }
+}
+.mycontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content {
+    width: calc(100% - 0px);
+    @include tablet {
+        width: calc(100% - 180px);
+    }
+    @include laptop {
+        width: calc(100% - 215px);
+    }
+    @include desktop-small {
+        width: calc(100% - 235px);
+    }
+    @include desktop {
+        width: calc(100% - 265px);
+    }
+    background: $darkgrey;
+    transition: all 0.15s ease-in;
+    margin-left: auto;
+}

@@ -1,0 +1,85 @@
+.contact {
+    padding: 0 0 6rem 0;
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+    }
+    &__formbtn {
+        background: transparent;
+        border: 2px solid $primary-blue;
+        padding: 0.8rem 2rem;
+        color: $primary-blue;
+        font-family: $heading-font-family;
+        font-size: 0.98rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        transition: background 0.15s ease-in;
+        cursor: pointer;
+    }
+    &__formbtn:hover {
+        background: #08597d;
+        color: white;
+    }
+    &__input {
+        font-family: $body-font-family;
+        width: 100%;
+        @include laptop {
+            width: 46.5%;
+        }
+        @include desktop-small {
+            width: 47%;
+        }
+        @include desktop {
+            width: 47.7%;
+        }
+        height: auto;
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        background: lighten($darkgrey, 10%);
+        color: $white;
+        border: 0;
+        font-size: 1.07rem;
+    }
+    &__input:focus-visible {
+        outline: 2px solid $primary-blue;
+        background: white;
+        color: black;
+    }
+    &__textarea {
+        font-family: $body-font-family;
+        width: 100%;
+        height: auto;
+        padding: 0.7rem;
+        margin-bottom: 1rem;
+        background: lighten($darkgrey, 10%);
+        color: $white;
+        border: 0;
+        font-size: 1.07rem;
+    }
+    &__textarea:focus-visible {
+        outline: 2px solid $primary-blue;
+        background: white;
+        color: black;
+    }
+    &__label {
+        color: $white;
+        display: block;
+        width: 48%;
+    }
+}
+::placeholder {
+    color: #999;
+    opacity: 1; /* Firefox */
+  }
+  
+  ::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #999;
+  }
+
+ .formmessage {
+    width: 100%;
+    margin: 1rem 0;
+    color: $white;
+ } 

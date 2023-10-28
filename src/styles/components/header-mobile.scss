@@ -1,0 +1,152 @@
+.headerHiddenMobile {
+    //transform: translateX(-215px) !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    // @include desktop-small {
+    //     transform: translateX(-235px) !important;
+    // }
+    // @include desktop {
+    //     transform: translateX(-265px) !important;
+    // }
+}
+.contentHiddenMobile {
+    width: calc(100% - 0px);
+}
+
+
+.headermobile__menu .headermobile__menulist .headermobile__menulink {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 1.325rem 1.4rem 1.325rem 3.3rem;
+    @include tablet {
+        font-size: 0.81rem;
+        padding: 1.125rem 1.4rem 1.125rem 3.3rem;
+    }
+    @include laptop {
+        font-size: 0.95rem;
+        padding: 1.1rem 2rem 1.1rem 3.5rem;
+    }
+    display: block;
+    border-bottom: 1px solid #333;
+    position: relative;
+    opacity: 0.6;
+    background: transparent;
+    transition: background 0.16s ease-in;
+}
+.headermobile__menu .headermobile__menulist .headermobile__menulink:hover {
+    opacity: 1;
+    background: black;
+}
+
+.headermobile {
+    width: 100%;
+    transition: transform 0.15s ease, opacity 0.15s ease; 
+    transform: translateX(0px);
+    display: block;
+    z-index: 999;
+    top: 41px;
+    @include tablet {
+        transform: translateX(0);
+        display: none;
+    }
+    opacity: 1;
+    position: fixed;
+    @include laptop {
+        width: 215px;
+    }
+    @include desktop-small {
+        width: 235px;
+    }
+    @include desktop {
+        width: 265px;
+    }
+    background: $darkestgrey;
+    letter-spacing: 0.06rem;
+    &__profile {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    &__profileimg {
+        width: 100%;
+        filter: grayscale(100%);
+    }
+    &__profileclose {
+        width: 16px;
+        height: 16px;
+        position: fixed;
+        z-index: 9;
+        left: 10px;
+        top: 14px;
+        opacity: 0.7;
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+    &__profilename {
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        background: rgba(78, 182, 240, 0.8);
+        padding: 1rem 1.25rem;
+        letter-spacing: 0rem;
+        font-size: 0.9rem;
+        @include laptop {
+            font-size: 1rem;
+            padding: 1.1rem 1.45rem;
+            letter-spacing: 0.03rem;
+        }
+        @include desktop-small {
+            font-size: 1.1rem;
+            padding: 1.1rem 1.55rem;
+            letter-spacing: 0.05rem;
+        }
+        @include desktop {
+            padding: 1.1rem 1.8rem;
+            letter-spacing: 0.15rem;
+        }
+        font-weight: bold;
+        position: relative;
+        bottom: 2.2px;
+        left: 0;
+        right: 0;
+        margin: -45px 0 0 0;
+    }
+    &__profileicon {
+        width: 23px;
+        margin-right: 11px;
+        position: absolute;
+        top: 17px;
+        left: 18px;
+        @include tablet {
+            top: 12px;
+            left: 18px;
+        }
+        @include laptop {
+            left: 24px;
+        }
+    }
+    &__menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    // &__sticky {
+    //     position: relative;
+    //     width: 180px;
+    //     @include laptop {
+    //         width: 215px;
+    //     }
+    //     @include desktop-small {
+    //         width: 235px;
+    //     }
+    //     @include desktop {
+    //         width: 265px;
+    //     }
+    //     top: 43px;
+    // }
+}

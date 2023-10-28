@@ -1,0 +1,102 @@
+.accordion {
+    padding: 1rem 0 2rem 0;
+    &__item {
+        color: white;
+        font-family: $body-font-family;
+    }
+    &__subtitle {
+        font-size: 1.2rem;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        font-family: $heading-font-family;
+        font-size: 2rem;
+        font-weight: 800;
+        color: white;
+        padding: 0.8rem 1.3rem;
+        border: 2px solid darken($midgrey, 18%);
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+        background: lighten($darkgrey, 2%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+    &__content {
+        background: lighten($darkgrey, 2%);
+        padding: 1.3rem 1.3rem 0rem 1.3rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+        border: 2px solid darken($midgrey, 18%);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        animation-name: accordion_animation;
+        animation-duration: 1s;
+        overflow: hidden;
+    }
+    &__plus {
+        font-family: $body-font-family;
+        font-weight: 300;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.4rem;
+    }
+    &__column {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__col:nth-child(1) {
+        width: 55%;
+        margin-right: 3%;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    &__col:nth-child(2) {
+        width: 42%;
+    }
+    &__col:nth-child(2) img {
+        width: 100%;
+        height: auto;
+    }
+    &__description {
+        font-weight: bold;
+        color: $primary-blue;
+    }
+    &__formbtn {
+        background: transparent;
+        border: 2px solid $primary-blue;
+        padding: 0.8rem 2rem;
+        margin-top: 1.5rem;
+        color: $primary-blue;
+        font-family: $heading-font-family;
+        font-size: 0.98rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        transition: background 0.15s ease-in;
+        cursor: pointer;
+        display: inline-block;
+        text-decoration: none;
+    }
+    &__formbtn:hover {
+        background: #08597d;
+        color: white;
+    }
+}
+
+.accordion_subtitle {
+    font-size: 1.2rem;
+    color: white;
+    padding: 1.4rem 0;
+    display: block;
+}
+
+@keyframes accordion_animation {
+    from {max-height: 0;}
+    to {max-height: 1000px;}
+  }

@@ -1,0 +1,57 @@
+.skillsicons {
+    background: #efefef;
+    display: none;
+    margin-bottom: 5rem;
+    @include iphone {
+        display: block;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // overflow: scroll;
+        padding: 0.5rem 0;
+    }
+    &__img {
+        width: 50px;
+        height: 50px;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        @include laptop {
+            margin-left: 0.9vw;
+            margin-right: 0.9vw;
+        }
+        @include desktop-small {
+            width: 65px;
+            height: 65px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+        }
+        @include desktop {
+            width: 90px;
+            height: 90px;
+            margin-left: 1.15vw;
+            margin-right: 1.15vw;
+        }
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    &__img:nth-child(5) {
+        width: 100px;
+        @include desktop-small {
+            width: 145px;
+        }
+        @include desktop {
+            width: 185px;
+        }
+    }
+    &__img:nth-child(9) {
+        width: 60px;
+        @include desktop-small {
+            width: 90px;
+        }
+        @include desktop {
+            width: 110px;
+        }
+    }
+}

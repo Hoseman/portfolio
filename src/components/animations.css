@@ -1,0 +1,47 @@
+.about_left_animation {
+    animation-name: about_us_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes about_us_left {
+    0%   {transform: scale(1)}
+    50%  {transform: scale(1.03)}
+    100% {transform: scale(1)}
+}
+
+.about_right_animation {
+    animation-name: about_us_right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes about_us_right {
+    0%   {transform: scale(1)}
+    50%  {transform: scale(1.03)}
+    100% {transform: scale(1)}
+}
+
+.experience_left_animation {
+    animation-name: education_left;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes education_left {
+    0%   {transform: scale(1)}
+    50%  {transform: scale(1.03)}
+    100% {transform: scale(1)}
+}
+
+.experience_right_animation {
+    animation-name: education_right;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes education_right {
+    0%   {transform: scale(1)}
+    50%  {transform: scale(1.03)}
+    100% {transform: scale(1)}
+}

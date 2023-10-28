@@ -1,0 +1,116 @@
+.mobilemenu {
+    width: calc(100% - 6.1rem);
+    height: auto;
+    padding: 0.9rem 1.8rem;
+    background: $black;
+    display: block;
+    position: fixed;
+    z-index: 99;
+    @include tablet {
+        display: none;
+    }
+    &__container {
+        width: 30px;
+        height: 21px;
+        position: relative;
+        left: 0;
+        margin-right: auto;
+        top: 0;
+    }
+    &__bar {
+        width: 100%;
+        height: 2px;
+        background: $white;
+        display: block;
+        position: absolute;
+    }
+    &__bar:nth-child(1) {
+        top:0;
+        left: 0;
+        right: 0;
+    }
+    &__bar:nth-child(2) {
+        top:47%;
+        left: 0;
+        right: 0;
+    }
+    &__bar:nth-child(3) {
+        bottom:0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.mobilemenu .menuicon {
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    padding: 5px 5px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .mobilemenu .menuicon .navicon {
+    background: #ccc;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 28px;
+  }
+  
+  .mobilemenu .menuicon .navicon:before,
+  .mobilemenu .menuicon .navicon:after {
+    background: #ccc;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .mobilemenu .menuicon .navicon:before {
+    top: 9px;
+  }
+  
+  .mobilemenu .menuicon .navicon:after {
+    top: -9px;
+  }
+  
+  /* menu btn */
+  
+  .mobilemenu .menubtn {
+    // display: none;
+    cursor: pointer;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 31.5px;
+    opacity: 0;
+    z-index: 99999;
+  }
+  
+  /* .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  } */
+  
+  .mobilemenu .menubtn:checked ~ .menuicon .navicon {
+    background: transparent;
+  }
+  
+  .mobilemenu .menubtn:checked ~ .menuicon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .mobilemenu .menubtn:checked ~ .menuicon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .mobilemenu .menubtn:checked ~ .menuicon:not(.steps) .navicon:before,
+  .mobilemenu .menubtn:checked ~ .menuicon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
