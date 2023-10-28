@@ -3,11 +3,11 @@
     top: 0;
     margin-top: 0;
     position: fixed;
-    @include laptop {
-        top: 50%;
-        margin-top: -20px;
-        position: absolute;
-    }
+    // @include laptop {
+    //     top: 50%;
+    //     margin-top: -20px;
+    //     position: absolute;
+    // }
     width: 40px;
     height: 40px;
     background: white;
@@ -18,12 +18,12 @@
     width: 70%;
     padding: 15%;
     opacity: 0.5;
-    animation-name: cog_animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    // animation-name: cog_animation;
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: linear;
 }
-@keyframes cog_animation {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
+// @keyframes cog_animation {
+//     from {transform: rotate(0deg);}
+//     to {transform: rotate(360deg);}
+// }

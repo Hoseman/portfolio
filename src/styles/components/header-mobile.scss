@@ -47,12 +47,15 @@
     display: block;
     z-index: 999;
     top: 41px;
+    opacity: 1;
+    position: relative !important;
+    @include iphone {
+        position: fixed;
+    }
     @include tablet {
         transform: translateX(0);
         display: none;
     }
-    opacity: 1;
-    position: fixed;
     @include laptop {
         width: 215px;
     }
