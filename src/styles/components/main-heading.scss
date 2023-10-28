@@ -14,10 +14,19 @@
     &__title {
         color: $primary-blue;
         font-family: $heading-font-family;
-        font-size: 2.2rem;
+        font-size: 2.05rem;
+        @include iphone {
+            font-size: 2.2rem;
+        }
         @include tablet {
             font-size: 2.6rem;
         }
         margin: 1.7rem 0.6rem 0.6rem 0;
+    }
+    &__mobilehide {
+        display: none;
+        @include iphone {
+            display: inline;
+        }
     }
 }
