@@ -24,17 +24,17 @@
         }
     }
     &__signature {
-        width: 200px;
+        width: 165px;
         @include iphone {
-            width: 50%;
+            width: 184px;
         }
         @include laptop {
-            width: 75%;
+            width: 200px;
         }
         @include desktop-small {
-            width: 310px;
+            width: 210px;
         }
-        margin-top: 0.5rem;
+        margin-top: 0.9rem;
     }
     &__column {
         display: flex;
