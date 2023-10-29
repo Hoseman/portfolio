@@ -4,12 +4,17 @@
     justify-content: space-between;
     margin-bottom: 0.88rem;
     &__icon {
-        width: 40px;
+        width: 37px;
+        margin-top: 1.3rem;
         @include tablet {
+            width: 37px;
+            margin-top: 1.3rem;
+        }
+        @include laptop {
             width: 46px;
+            margin-top: 1.3rem;
         }
         height: auto;
-        margin-top: 1.3rem;
     }
     &__title {
         color: $primary-blue;
