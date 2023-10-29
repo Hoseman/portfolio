@@ -15,22 +15,22 @@ function Header() {
     const isPortfolioPage = location.pathname === '/portfolio' || location.pathname === '/portfolio/';
 
 
-    const [menuHighlightAbout, setmenuHighlightAbout] = useState('transparent');
+    const [menuHighlightAbout, setmenuHighlightAbout] = useState();
     const [menuOpacityAbout, setmenuOpacityAbout] = useState('0.6');
 
-    const [menuHighlightCoding, setmenuHighlightCoding] = useState('transparent');
+    const [menuHighlightCoding, setmenuHighlightCoding] = useState();
     const [menuOpacityCoding, setmenuOpacityCoding] = useState('0.6');
 
-    const [menuHighlightExamplePortfolio, setmenuHighlightExamplePortfolio] = useState('transparent');
+    const [menuHighlightExamplePortfolio, setmenuHighlightExamplePortfolio] = useState();
     const [menuOpacityExamplePortfolio, setmenuOpacityExamplePortfolio] = useState('0.6');
 
-    const [menuHighlightExperience, setmenuHighlightExperience] = useState('transparent');
+    const [menuHighlightExperience, setmenuHighlightExperience] = useState();
     const [menuOpacityExperience, setmenuOpacityExperience] = useState('0.6');
 
-    const [menuHighlightContact, setmenuHighlightContact] = useState('transparent');
+    const [menuHighlightContact, setmenuHighlightContact] = useState();
     const [menuOpacityContact, setmenuOpacityContact] = useState('0.6');
 
-    const [menuHighlightContactPortfolio, setmenuHighlightContactPortfolio] = useState('transparent');
+    const [menuHighlightContactPortfolio, setmenuHighlightContactPortfolio] = useState();
     const [menuOpacityContactPortfolio, setmenuOpacityContactPortfolio] = useState('0.6');
 
 
@@ -127,7 +127,7 @@ function Header() {
               setmenuHighlightExamplePortfolio('transparent');
               setmenuOpacityExamplePortfolio('0.6');
             }
-            if (window.scrollY >= 2220 && window.scrollY <= 3000) {
+            if (window.scrollY >= 2180 && window.scrollY <= 3000) {
               setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
               setmenuOpacityContactPortfolio('1');
             } else {
@@ -143,42 +143,42 @@ function Header() {
               setmenuHighlightAbout('rgba(78, 182, 240, 0.8)');
               setmenuOpacityAbout('1');
             } else {
-              setmenuHighlightAbout('transparent');
+              setmenuHighlightAbout();
               setmenuOpacityAbout('0.6');
             }
             if (window.scrollY >= 1140 && window.scrollY <= 1640) {
               setmenuHighlightCoding('rgba(78, 182, 240, 0.8)');
               setmenuOpacityCoding('1');
             } else {
-              setmenuHighlightCoding('transparent');
+              setmenuHighlightCoding();
               setmenuOpacityCoding('0.6');
             }
             if (window.scrollY >= 1750 && window.scrollY <= 2250) {
               setmenuHighlightExperience('rgba(78, 182, 240, 0.8)');
               setmenuOpacityExperience('1');
             } else {
-              setmenuHighlightExperience('transparent');
+              setmenuHighlightExperience();
               setmenuOpacityExperience('0.6');
             }
             if (window.scrollY >= 2450 && window.scrollY <= 3950) {
               setmenuHighlightContact('rgba(78, 182, 240, 0.8)');
               setmenuOpacityContact('1');
             } else {
-              setmenuHighlightContact('transparent');
+              setmenuHighlightContact();
               setmenuOpacityContact('0.6');
             }
             if (window.scrollY >= 480 && window.scrollY <= 1000) {
               setmenuHighlightExamplePortfolio('rgba(78, 182, 240, 0.8)');
               setmenuOpacityExamplePortfolio('1');
             } else {
-              setmenuHighlightExamplePortfolio('transparent');
+              setmenuHighlightExamplePortfolio();
               setmenuOpacityExamplePortfolio('0.6');
             }
             if (window.scrollY >= 1500 && window.scrollY <= 2000) {
               setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
               setmenuOpacityContactPortfolio('1');
             } else {
-              setmenuHighlightContactPortfolio('transparent');
+              setmenuHighlightContactPortfolio();
               setmenuOpacityContactPortfolio('0.6');
             }
 
