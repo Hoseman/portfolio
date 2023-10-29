@@ -89,8 +89,8 @@ function Header() {
             
           } else if (window.innerWidth > 768 &&  window.innerWidth <= 1023) {
 
-            // console.log(window.scrollY);
-            // console.log('desktop-small');
+            console.log(window.scrollY);
+            console.log('desktop-small');
 
             if (window.scrollY >= 476 && window.scrollY <= 1000) {
               setmenuHighlightAbout('rgba(78, 182, 240, 0.8)');
@@ -127,7 +127,7 @@ function Header() {
               setmenuHighlightExamplePortfolio('transparent');
               setmenuOpacityExamplePortfolio('0.6');
             }
-            if (window.scrollY >= 2270 && window.scrollY <= 3000) {
+            if (window.scrollY >= 2220 && window.scrollY <= 3000) {
               setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
               setmenuOpacityContactPortfolio('1');
             } else {

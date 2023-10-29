@@ -11,7 +11,10 @@
         display: flex;
         justify-content: space-between;
         font-family: $heading-font-family;
-        font-size: 2rem;
+        font-size: 1.65rem;
+        @include laptop {
+            font-size: 2rem;
+        }
         font-weight: 800;
         color: white;
         padding: 0.8rem 1.3rem;

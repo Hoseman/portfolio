@@ -9,8 +9,10 @@
     }
     opacity: 1;
     position: fixed;
+    letter-spacing: 0.03rem;
     @include laptop {
         width: 215px;
+        letter-spacing: 0.06rem;
     }
     @include desktop-small {
         width: 235px;
@@ -19,7 +21,6 @@
         width: 265px;
     }
     background: $darkestgrey;
-    letter-spacing: 0.06rem;
     &__profile {
         width: 100%;
         height: auto;
