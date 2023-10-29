@@ -168,3 +168,16 @@
     opacity: 1;
     background: black;
 }
+
+.portfoliocontainer .header {
+    height: 400px;
+    @include laptop {
+        height: 450px;
+    }
+    @include desktop-small {
+        height: 480px;
+    }
+    @include desktop {
+        height: 520px;
+    }
+}

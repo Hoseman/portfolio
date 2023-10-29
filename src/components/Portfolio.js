@@ -68,7 +68,7 @@ function Portfolio() {
 
 
     return (
-        <div className={styles.mycontainer}>
+        <div className={`${styles.mycontainer} ${styles.portfoliocontainer}`}>
           <div className={styles.mobilemenu}>
               
           <input onClick={toggleHeaderMobile} className={styles.menubtn} type="checkbox" id="menu-btn" />
