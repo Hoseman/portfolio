@@ -25,7 +25,7 @@
     }
     &__mobilehide {
         display: none;
-        @include iphone {
+        @include laptop {
             display: inline;
         }
     }

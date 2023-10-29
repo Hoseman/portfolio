@@ -24,7 +24,7 @@
     }
     &__content {
         background: lighten($darkgrey, 2%);
-        padding: 1.3rem 1.3rem 0rem 1.3rem;
+        padding: 1.3rem 1.3rem 1.8rem 1.3rem;
         border-radius: 0.5rem;
         margin-bottom: 1rem;
         border: 2px solid darken($midgrey, 18%);
@@ -52,18 +52,33 @@
         flex-wrap: wrap;
     }
     &__col:nth-child(1) {
-        width: 55%;
+        width: 100%;
+        @include laptop {
+            width: 55%;
+        }
         margin-right: 3%;
         font-size: 1.1rem;
         line-height: 1.5rem;
     }
     &__col:nth-child(2) {
-        width: 42%;
+        width: 100%;
+        @include laptop {
+            width: 42%;
+        }
     }
     &__col:nth-child(2) img {
         width: 100%;
         height: auto;
+        margin-bottom: -1.2rem;
+        margin-top: 2rem;
+        @include laptop {
+            margin-top: 0;
+        }
     }
+    // &__col:nth-child(1) p, &__col:nth-child(1) a {
+    //     margin-left: 1rem;
+    //     margin-right: 1rem;
+    // } 
     &__description {
         font-weight: bold;
         color: $primary-blue;

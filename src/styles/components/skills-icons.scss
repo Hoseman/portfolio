@@ -1,9 +1,13 @@
 .skillsicons {
     background: #efefef;
     display: none;
-    margin-bottom: 5rem;
+    margin-bottom: 1.5rem;
     @include iphone {
         display: block;
+        margin-bottom: 1.5rem;
+    }
+    @include laptop {
+        margin-bottom: 5rem;
     }
     &__container {
         display: flex;

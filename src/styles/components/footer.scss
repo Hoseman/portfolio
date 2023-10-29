@@ -5,6 +5,12 @@
     @include iphone {
         padding: 7rem 0 4rem 0rem;
     }
+    @include tablet {
+        padding: 9rem 0 4rem 0rem;
+    }
+    @include laptop {
+        padding: 7rem 0 4rem 0rem;
+    }
     &__column {
         display: flex;
         flex-wrap: wrap;

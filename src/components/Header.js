@@ -39,48 +39,152 @@ function Header() {
     useEffect(() => {
 
         const handleScroll = () => {
-          if (window.scrollY >= 500 && window.scrollY <= 1000) {
-            setmenuHighlightAbout('rgba(78, 182, 240, 0.8)');
-            setmenuOpacityAbout('1');
+          if (window.innerWidth > 0 &&  window.innerWidth <= 768) {
+
+            // console.log(window.scrollY);
+            // console.log('ipad');
+
+            if (window.scrollY >= 475 && window.scrollY <= 1405) {
+              setmenuHighlightAbout('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityAbout('1');
+            } else {
+              setmenuHighlightAbout('transparent');
+              setmenuOpacityAbout('0.6');
+            }
+            if (window.scrollY >= 1450 && window.scrollY <= 2222) {
+              setmenuHighlightCoding('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityCoding('1');
+            } else {
+              setmenuHighlightCoding('transparent');
+              setmenuOpacityCoding('0.6');
+            }
+            if (window.scrollY >= 2280 && window.scrollY <= 3920) {
+              setmenuHighlightExperience('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityExperience('1');
+            } else {
+              setmenuHighlightExperience('transparent');
+              setmenuOpacityExperience('0.6');
+            }
+            if (window.scrollY >= 4000 && window.scrollY <= 4500) {
+              setmenuHighlightContact('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityContact('1');
+            } else {
+              setmenuHighlightContact('transparent');
+              setmenuOpacityContact('0.6');
+            }
+            if (window.scrollY >= 390 && window.scrollY <= 1000) {
+              setmenuHighlightExamplePortfolio('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityExamplePortfolio('1');
+            } else {
+              setmenuHighlightExamplePortfolio('transparent');
+              setmenuOpacityExamplePortfolio('0.6');
+            }
+            if (window.scrollY >= 2350 && window.scrollY <= 4000) {
+              setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityContactPortfolio('1');
+            } else {
+              setmenuHighlightContactPortfolio('transparent');
+              setmenuOpacityContactPortfolio('0.6');
+            }
+            
+          } else if (window.innerWidth > 768 &&  window.innerWidth <= 1023) {
+
+            // console.log(window.scrollY);
+            // console.log('desktop-small');
+
+            if (window.scrollY >= 476 && window.scrollY <= 1000) {
+              setmenuHighlightAbout('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityAbout('1');
+            } else {
+              setmenuHighlightAbout('transparent');
+              setmenuOpacityAbout('0.6');
+            }
+            if (window.scrollY >= 1140 && window.scrollY <= 2189) {
+              setmenuHighlightCoding('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityCoding('1');
+            } else {
+              setmenuHighlightCoding('transparent');
+              setmenuOpacityCoding('0.6');
+            }
+            if (window.scrollY >= 2250 && window.scrollY <= 3780) {
+              setmenuHighlightExperience('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityExperience('1');
+            } else {
+              setmenuHighlightExperience('transparent');
+              setmenuOpacityExperience('0.6');
+            }
+            if (window.scrollY >= 3870 && window.scrollY <= 4500) {
+              setmenuHighlightContact('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityContact('1');
+            } else {
+              setmenuHighlightContact('transparent');
+              setmenuOpacityContact('0.6');
+            }
+            if (window.scrollY >= 390 && window.scrollY <= 1000) {
+              setmenuHighlightExamplePortfolio('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityExamplePortfolio('1');
+            } else {
+              setmenuHighlightExamplePortfolio('transparent');
+              setmenuOpacityExamplePortfolio('0.6');
+            }
+            if (window.scrollY >= 2270 && window.scrollY <= 3000) {
+              setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityContactPortfolio('1');
+            } else {
+              setmenuHighlightContactPortfolio('transparent');
+              setmenuOpacityContactPortfolio('0.6');
+            }
           } else {
-            setmenuHighlightAbout('transparent');
-            setmenuOpacityAbout('0.6');
+
+            // console.log(window.scrollY);
+            // console.log('desktop');
+
+            if (window.scrollY >= 476 && window.scrollY <= 1000) {
+              setmenuHighlightAbout('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityAbout('1');
+            } else {
+              setmenuHighlightAbout('transparent');
+              setmenuOpacityAbout('0.6');
+            }
+            if (window.scrollY >= 1140 && window.scrollY <= 1640) {
+              setmenuHighlightCoding('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityCoding('1');
+            } else {
+              setmenuHighlightCoding('transparent');
+              setmenuOpacityCoding('0.6');
+            }
+            if (window.scrollY >= 1750 && window.scrollY <= 2250) {
+              setmenuHighlightExperience('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityExperience('1');
+            } else {
+              setmenuHighlightExperience('transparent');
+              setmenuOpacityExperience('0.6');
+            }
+            if (window.scrollY >= 2450 && window.scrollY <= 3950) {
+              setmenuHighlightContact('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityContact('1');
+            } else {
+              setmenuHighlightContact('transparent');
+              setmenuOpacityContact('0.6');
+            }
+            if (window.scrollY >= 480 && window.scrollY <= 1000) {
+              setmenuHighlightExamplePortfolio('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityExamplePortfolio('1');
+            } else {
+              setmenuHighlightExamplePortfolio('transparent');
+              setmenuOpacityExamplePortfolio('0.6');
+            }
+            if (window.scrollY >= 1500 && window.scrollY <= 2000) {
+              setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
+              setmenuOpacityContactPortfolio('1');
+            } else {
+              setmenuHighlightContactPortfolio('transparent');
+              setmenuOpacityContactPortfolio('0.6');
+            }
+
           }
-          if (window.scrollY >= 1140 && window.scrollY <= 1640) {
-            setmenuHighlightCoding('rgba(78, 182, 240, 0.8)');
-            setmenuOpacityCoding('1');
-          } else {
-            setmenuHighlightCoding('transparent');
-            setmenuOpacityCoding('0.6');
-          }
-          if (window.scrollY >= 1750 && window.scrollY <= 2250) {
-            setmenuHighlightExperience('rgba(78, 182, 240, 0.8)');
-            setmenuOpacityExperience('1');
-          } else {
-            setmenuHighlightExperience('transparent');
-            setmenuOpacityExperience('0.6');
-          }
-          if (window.scrollY >= 2450 && window.scrollY <= 3950) {
-            setmenuHighlightContact('rgba(78, 182, 240, 0.8)');
-            setmenuOpacityContact('1');
-          } else {
-            setmenuHighlightContact('transparent');
-            setmenuOpacityContact('0.6');
-          }
-          if (window.scrollY >= 500 && window.scrollY <= 1000) {
-            setmenuHighlightExamplePortfolio('rgba(78, 182, 240, 0.8)');
-            setmenuOpacityExamplePortfolio('1');
-          } else {
-            setmenuHighlightExamplePortfolio('transparent');
-            setmenuOpacityExamplePortfolio('0.6');
-          }
-          if (window.scrollY >= 1500 && window.scrollY <= 2000) {
-            setmenuHighlightContactPortfolio('rgba(78, 182, 240, 0.8)');
-            setmenuOpacityContactPortfolio('1');
-          } else {
-            setmenuHighlightContactPortfolio('transparent');
-            setmenuOpacityContactPortfolio('0.6');
-          }
+
+
         };
     
         window.addEventListener('scroll', handleScroll);

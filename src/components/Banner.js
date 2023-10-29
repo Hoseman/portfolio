@@ -14,21 +14,13 @@ function Banner() {
 
   
 
-  const [cogPosition, setcogPosition] = useState(0);
-
-  // const [cogPosition, setcogPosition] = useState('absolute');
+  // const [cogPosition, setcogPosition] = useState(0);
 
 
 
   useEffect(() => {
     const handleScroll = () => {
 
-
-      // if (window.scrollY >= 50) {
-      //   setcogPosition('fixed');
-      // } else {
-      //   setcogPosition('absolute');
-      // }
 
       // Get the scroll position relative to the entire document
       const scrollPosition = window.scrollY;
@@ -37,16 +29,14 @@ function Banner() {
 
       // Calculate the rotation angle based on the scroll position
       const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-      const rotationAngle = (scrollPosition / maxScroll) * 360;
+      const rotationAngle = (scrollPosition / maxScroll) * 360 * 2;
 
       // Set the rotation state
       setRotation(rotationAngle);
 
-      setcogPosition(290);
+      // setcogPosition(290);
 
-      
-
-      //console.log(rotationAngle);
+    
 
     };
 
@@ -64,7 +54,7 @@ function Banner() {
     {isPortfolioPage ? (
 
             <div className={styles.bannerportfolio}>
-            <div className={styles.cog__menu} style={{top: cogPosition - rotation }}>
+            <div className={styles.cog__menu}>
             <img src={GearIcon} alt="mini-menu" className={styles.cog__img} style={{ transform: `rotate(${rotation}deg)` }} />
             </div>
             <div className={styles.banner__navigation}>
