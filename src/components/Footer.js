@@ -39,11 +39,11 @@ function Footer() {
                 <div className={styles.footer__col}>
                     <h4 className={styles.footer__heading}>Quick Menu</h4>
                     <ul className={styles.footer__menu}>
-                        <li className={styles.footer__menulist}><a href="/.">About Me</a></li>
-                        <li className={styles.footer__menulist}><a href="/.">Coding Skills</a></li>
-                        <li className={styles.footer__menulist}><a href="/.">Education And Experience</a></li>
-                        <li className={styles.footer__menulist}><a href="/.">Portfolio</a></li>
-                        <li className={styles.footer__menulist}><a href="/.">Get In Touch</a></li>
+                        <li className={styles.footer__menulist}><a href="#about">About Me</a></li>
+                        <li className={styles.footer__menulist}><a href="#coding">Coding Skills</a></li>
+                        <li className={styles.footer__menulist}><a href="#experience">Education And Experience</a></li>
+                        <li className={styles.footer__menulist}><a href="#contact">Get In Touch</a></li>
+                        <li className={styles.footer__menulist}><a href="/portfolio">Portfolio</a></li>
                     </ul>
                 </div>
 

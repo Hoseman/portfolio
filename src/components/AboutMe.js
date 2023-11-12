@@ -9,6 +9,7 @@ function AboutMe() {
   // State variable to track whether the user has scrolled past 500px
   const [aboutLeftAnimation, setaboutLeftAnimation] = useState(false);
   const [aboutRightAnimation, setaboutRightAnimation] = useState(false);
+  const [userId, setUserId] = useState('');
 
   // Function to handle scrolling and update the state
   const handleScroll = () => {
@@ -28,41 +29,17 @@ function AboutMe() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
+    // Extract the 'id' parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const idParam = urlParams.get('id');
+    setUserId(idParam || ''); // Set the id in the state
+
     // Remove the scroll event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-    // const [aboutLeft, setaboutLeft] = useState('0rem');
-    // const [aboutLeftDuration, setaboutLeftDuration] = useState('0rem');
-    // const [aboutRight, setaboutRight] = useState('0rem');
-    // const [aboutRightDuration, setaboutRightDuration] = useState('0rem');
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //       if (window.scrollY >= 500 ) {
-    //         setaboutLeft('-1rem');
-    //         setaboutLeftDuration('1rem');
-    //       } else {
-    //         setaboutLeft('0rem');
-    //         setaboutLeftDuration('0rem');
-    //       }
-    //       if (window.scrollY >= 550 ) {
-    //         setaboutRight('-1rem');
-    //         setaboutRightDuration('1rem');
-    //       } else {
-    //         setaboutRight('0rem');
-    //         setaboutRightDuration('0rem');
-    //       }
-    //     };
-    
-    //     window.addEventListener('scroll', handleScroll);
-    
-    //     return () => {
-    //       window.removeEventListener('scroll', handleScroll);
-    //     };
-    //   }, []);
 
     return(
         <>
@@ -89,7 +66,11 @@ function AboutMe() {
                         <br></br>
                         <h4 className={styles.about__address}>13 Buttermere Close<br></br> Bletchley<br></br> Milton Keynes<br></br> MK2 3DG</h4>
                         <br></br>
-                        <a className={styles.about__download} href="/">DOWNLOAD CV</a>
+                        {userId === 'ah13200365' && (
+                          <a className={styles.about__download} href="/CV.zip" download>
+                            DOWNLOAD CV
+                          </a>
+                        )}
                     </div>  
                 </div>
             </div>

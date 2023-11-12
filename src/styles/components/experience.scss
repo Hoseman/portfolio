@@ -146,4 +146,27 @@
             display: inline;
         }
     }
+    // &__expand {
+    //     display: none;
+    // }
+    &__viewmore {
+        font-family: $heading-font-family;
+        border: 2px solid $primary-blue;
+        padding: 0.8rem 2.2rem;
+        color: $primary-blue;
+        text-decoration: none;
+        font-weight: 800;
+        letter-spacing: 0.05rem;
+        font-size: 0.98rem;
+        background: transparent;
+        transition: background 0.15s ease-in;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+    &__viewmore:hover {
+        background: #08597d;
+        color: $white;
+    }
 }

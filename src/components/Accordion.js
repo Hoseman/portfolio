@@ -81,7 +81,7 @@ function Accordion() {
     {
         title: 'Lila Jewellery Website',
         content_title_1: 'Description',
-        content_1: 'A WooCommerce website for a Bedfordshire based Jewellery company and built as a custom bespoke Wordpress theme.',
+        content_1: 'A WooCommerce website for a Bedfordshire based jewellery company and built as a custom bespoke Wordpress theme.',
         content_title_2: 'Project Overview',
         content_2: 'The client owned and was managing an old WooCommerce website. But they wanted a complete redesign. They also wanted to offer products as trade prices to members only. The new website was re-built from scratch as a fully responsive custom wordpress theme. The membership functionality was handled by using the WooCommerce Memberships plugin.',
         link: 'https://lila-jewellery.fluidstaging.co.uk',

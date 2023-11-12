@@ -6,6 +6,12 @@ function EducationExperience() {
 
     const [educationLeftAnimation, seteducationLeftAnimation] = useState(false);
     const [educationRightAnimation, seteducationRightAnimation] = useState(false);
+    const [showMoreExperience, setShowMoreExperience] = useState(false);
+
+    const toggleExperience = () => {
+        setShowMoreExperience(!showMoreExperience);
+    };
+
 
     const handleScroll = () => {
         if (window.scrollY > 1450) {
@@ -38,6 +44,7 @@ function EducationExperience() {
                     <h1 className={styles.mainheading__title}><span className={styles.mainheading__mobilehide}>Education And </span>Experience</h1>
                     <img alt="Coding Skills" src={ExperienceIconBlue} className={styles.mainheading__icon} />
                 </div>
+
                 <div className={styles.experience__column}>
 
                     <div className={styles.experience__col + (educationLeftAnimation ? ' experience_left_animation' : '')}>
@@ -52,7 +59,7 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Xigen Ltd</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
                                 </div>
                             </div>
 
@@ -66,7 +73,7 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Fluid Studios Ltd</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Test websites in Browserstack.</p>
                                 </div>
                             </div>
 
@@ -80,9 +87,11 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Web Designer/Front End Developer</h4>
                                     <p className={styles.experience__job}>Big Marketing Ltd</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>Develop themes and plugins for Wordpress. Design and build responsive websites using the Bootstrap framework. Design and build e-commerce websites using Prestashop, Opencart and WooCommerce. Build content management solutions for websites. On-going design and maintenance of new and existing websites. Domain, website and email management using Plesk. Build car dealership sales event portals. Build HTML emails for email marketing campaigns. Build microsites for marketing campaigns.</p>
                                 </div>
                             </div>
+
+
 
                     </div>
                     <div className={styles.experience__col + (educationRightAnimation ? ' experience_right_animation' : '')}>
@@ -97,7 +106,7 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>B'TECH HND in Graphic Design</h4>
                                     <p className={styles.experience__job}>Nene College, Northampton</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>Two years at Nene College, Northamption studying graphic design at ordinary national diploma level</p>
                                 </div>
                             </div>
 
@@ -111,7 +120,7 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>B'TECH OND in Graphic Design</h4>
                                     <p className={styles.experience__job}>Nene College, Northampton</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>Two years at Nene College, Northamption studying graphic design at higher national diploma level.</p>
                                 </div>
                             </div>
 
@@ -125,13 +134,137 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>O Level & A Level studies</h4>
                                     <p className={styles.experience__job}>The Lord Grey School, Bletchley</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>Five CSE's, 3 O Levels (art, design, english language) and one A level (art)</p>
                                 </div>
                             </div>
 
                     </div> 
 
+
                 </div>
+
+
+                <button onClick={toggleExperience} className={styles.experience__viewmore}>
+              {showMoreExperience ? 'VIEW LESS EXPERIENCE' : 'VIEW MORE EXPERIENCE'}
+            </button>
+
+
+                {showMoreExperience && (
+                    <div className={styles.experience__column}>
+                        {/* Additional experience cards */}
+
+                        <div className={styles.experience__col + (educationLeftAnimation ? ' experience_left_animation' : '')}>
+    
+
+                        <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Jan</span><span> 2012</span></p>
+                                                <p className={styles.experience__datefrom}><span>Dec</span><span> 2012</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Artworker/Web Designer</h4>
+                                            <p className={styles.experience__job}>Abstract Group</p>
+                                            <p className={styles.experience__description}>The design, maintenance and upkeep of the Annodata corporate website. Developing a corporate brand for Annodata. Designing brochures, leaflets and printed collateral for Annodata. Creating HTML emails. Working on the corporate branding for the Abstract Group side of the company. Designing websites for external clients. Supplying print ready artwork for the digital print and litho departments.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Jul</span><span> 2005</span></p>
+                                                <p className={styles.experience__datefrom}><span>Dec</span><span> 2011</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Artworker/Web Designer</h4>
+                                            <p className={styles.experience__job}>Annodata Print Services</p>
+                                            <p className={styles.experience__description}>The design, maintenance and upkeep of the Annodata corporate website. Design and build of websites for external clients. Developing a corporate brand for Annodata. Designing brochures, newsletters, mailers, leaflets, logos and exhibition panels. Creating HTML emails. Supplying print ready artwork for the digital print and litho departments.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Mar</span><span> 1996</span></p>
+                                                <p className={styles.experience__datefrom}><span>Jul</span><span> 2005</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Artworker</h4>
+                                            <p className={styles.experience__job}>Turners Creative</p>
+                                            <p className={styles.experience__description}>The design maintenance and upkeep of the Turners Creative website. High-end scanning, Photoshop re-touching and montage work. Technical illustration such as architects floor plans, maps, and line drawings. Designing video sleeves, brochures, mailers, leaflets, corporate identities.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Mar</span><span> 1996</span></p>
+                                                <p className={styles.experience__datefrom}><span>Feb</span><span> 1990</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Graphic Designer</h4>
+                                            <p className={styles.experience__job}>Anker International</p>
+                                            <p className={styles.experience__description}>At Anker International I worked within a small in-house design studio designing photo albums, photo frames, stationery products and partyware. I was eventually appointed studio manager at this company.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Apr</span><span> 1989</span></p>
+                                                <p className={styles.experience__datefrom}><span>Feb</span><span> 1990</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Graphic Designer</h4>
+                                            <p className={styles.experience__job}>Tyler Camoccio Design</p>
+                                            <p className={styles.experience__description}>Working for a small graphic design agency in Ampthill, I took on a creative role, working on a variety of projects, from design to finished artwork, including designing packaging for Sondico Sports. My duties included generating ideas as marker visuals, creating mock-ups and producing camera-ready artwork.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Jul</span><span> 1988</span></p>
+                                                <p className={styles.experience__datefrom}><span>Mar</span><span> 1989</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Graphic Designer</h4>
+                                            <p className={styles.experience__job}>Slideshow</p>
+                                            <p className={styles.experience__description}>Working in Central Milton Keynes and London, I was involved in creating slide presentations and graphics for local corporate companies. All the work was PC based computer graphics, using software applications called Freelance and PictureIT.</p>
+                                        </div>
+                                    </div>
+
+                                    <div className={styles.experience__card}>
+                                        <div className={styles.experience__carddate}>
+                                            <span className={styles.experience__timeline}>
+                                                <p className={styles.experience__dateto}><span>Sept</span><span> 1987</span></p>
+                                                <p className={styles.experience__datefrom}><span>Jul</span><span> 1988</span></p>
+                                            </span>
+                                        </div>
+                                        <div className={styles.experience__carddetails}>
+                                            <h4 className={styles.experience__title}>Graphic Designer</h4>
+                                            <p className={styles.experience__job}>Avatar Publishing Ltd</p>
+                                            <p className={styles.experience__description}>My first job after leaving college. Mainly involved in design and artwork for Woolworths training manuals. My duties included generating ideas as marker visuals, creating mock-ups, liaising with typesetters, and creating camera-ready artwork.</p>
+                                        </div>
+                                    </div>
+
+
+                        </div>
+                        <div className={styles.experience__col + (educationRightAnimation ? ' experience_right_animation' : '')}>
+
+                        </div> 
+
+                        {/* ... */}
+                    </div>
+                )}
+
+
             </div>
         </section>
 
