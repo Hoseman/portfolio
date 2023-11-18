@@ -1,3 +1,37 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+Andrew Hosegood
+13 Buttermere Close
+Bletchley
+Milton Keynes
+MK2 3DG
+
+15th November 2023
+
+Dear Sir/Madam
+
+I am an experienced Front End Developer, with good core skills in Wordpress and with a passion for Wordpress theme development.
+
+I am currently seeking alternative employment and I am looking for a suitable role where I can harness my core skills and talents.
+
+I wish to apply for the role of Wordpress Developer, currently being advertised. Please find enclosed my CV for your consideration. 
+
+As you can see from my attached CV, I have around 10 years agency experience as a Wordpress Developer, and I believe the knowledge and skills built up during this time make me the right candidate for the role.
+
+I have good skills in Wordpress Theme Development, WooCommerce, Javascript, HTML, CSS, PHP, jQuery and SQL, and I am very experienced at building Wordpress themes from scratch.
+
+Below are some examples of recent work:
+
+https://transcreationagency.co.uk
+https://hcrestorations.co.uk
+https://easycleaning.fluidstaging.co.uk
+https://www.theglassescompany.co.uk
+
+I also have an online portfolio which is here: https://portfolio-ah2023.netlify.app/?id=ah13200365
+
+Thank you for your time and consideration. I look forward to meeting with you to discuss my application further. 
+
+
+Yours faithfully
+
+
+
+Andrew Hosegood

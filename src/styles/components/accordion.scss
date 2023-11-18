@@ -11,9 +11,19 @@
         display: flex;
         justify-content: space-between;
         font-family: $heading-font-family;
-        font-size: 1.65rem;
+        font-size: 1.35rem;
+        line-height: 1.75rem;
+        @include iphone {
+            font-size: 1.65rem;
+            line-height: 2.05rem;
+        }
         @include laptop {
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+        @include desktop-small {
             font-size: 2rem;
+            line-height: 2.4rem;
         }
         font-weight: 800;
         color: white;

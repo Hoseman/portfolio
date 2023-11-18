@@ -20,16 +20,20 @@
         color: $primary-blue;
         font-family: $heading-font-family;
         font-size: 2.05rem;
+        line-height: 2.35rem;
         @include iphone {
             font-size: 2.2rem;
+            line-height: 2.6rem;
         }
         @include tablet {
             font-size: 2.4rem;
+            line-height: 2.8rem;
         }
         @include laptop {
             font-size: 2.6rem;
+            line-height: 3rem;
         }
-        margin: 1.7rem 0.6rem 0.6rem 0;
+        margin: 1.7rem 0.6rem 1rem 0;
     }
     &__mobilehide {
         display: none;

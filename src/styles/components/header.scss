@@ -65,11 +65,11 @@
         @include desktop-small {
             font-size: 1.1rem;
             padding: 1.1rem 1.55rem;
-            letter-spacing: 0.05rem;
+            letter-spacing: 0.03rem;
         }
         @include desktop {
             padding: 1.1rem 1.8rem;
-            letter-spacing: 0.15rem;
+            letter-spacing: 0.13rem;
         }
         font-weight: bold;
         position: relative;

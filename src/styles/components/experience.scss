@@ -46,11 +46,12 @@
     }
     &__carddate {
         width: 13%;
+        padding-right: 2%;
         @include iphone {
-            width: 8%;
+            width: 13%;
+            padding-right: 0;
         }
         position: relative;
-        padding-right: 5%;
     }
     &__carddetails {
         width: 82%;
@@ -75,15 +76,16 @@
     }
     &__description {
         color: $white;
-        margin: 1rem 0 1.7rem 0;
+        margin: 1rem 0 0.7rem 0;
     }
     &__timeline {
         border-right: 2px solid $primary-blue;
-        width: 100%;
+        width: calc(100% - 8px);
         display: block;
         position: absolute;
         top: 0;
         bottom: 0;
+        padding-right: 8px;
     }
     &__timeline::before {
         content: "";
@@ -122,8 +124,11 @@
         }
     }
     &__dateto span {
-        display: block;
-        @include laptop {
+        display: inline;
+        @include desktop-small {
+            display: block;
+        }
+        @include desktop {
             display: inline;
         }
     }
@@ -141,8 +146,11 @@
         }
     }
     &__datefrom span {
-        display: block;
-        @include laptop {
+        display: inline;
+        @include desktop-small {
+            display: block;
+        }
+        @include desktop {
             display: inline;
         }
     }
@@ -168,5 +176,24 @@
     &__viewmore:hover {
         background: #08597d;
         color: $white;
+    }
+    &__list {
+        // margin-left: 0;
+        padding-left: 1rem;
+        //list-style-image: url(../../images/chevron-solid.svg);
+        // list-style-type: none;
+        // font-style: italic;
+        // font-weight: bold;
+        color: $primary-blue;
+    }
+    &__listli {
+        color: $white;
+        margin-bottom: 0.7rem;
+    }
+    &__listli span {
+        padding:0;
+        margin:0;
+        position: relative;
+        left: -3px;
     }
 }

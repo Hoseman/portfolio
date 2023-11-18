@@ -59,7 +59,11 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Xigen Ltd</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Maintain existing Xigen websites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>I work within a big web development team and help with the maintenance of the companies fleet of client based websites.</p>
+                                    <ul className={styles.experience__list}>
+                                        <li className={styles.experience__listli}><span>Built a multi-lingual Wordpress website in 20 languages.</span></li>
+                                        <li className={styles.experience__listli}><span>Help maintain the companies fleet of client based websites.</span></li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -73,7 +77,11 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Fluid Studios Ltd</p>
-                                    <p className={styles.experience__description}>Build custom bespoke Wordpress sites. Build custom bespoke WooCommerce sites. Test websites in Browserstack.</p>
+                                    <p className={styles.experience__description}>I worked at Fuid Studios with the technical director and 1 other front end developer, building custom Wordpress sites and Custom WooCommerce sites. All sites built from scratch using BEM methodology.</p>
+                                    <ul className={styles.experience__list}>
+                                        <li className={styles.experience__listli}><span>Built a large scale Woocommerce website for a glasses company from scratch, with customisation of the standard WooCommerce user journey.</span></li>
+                                        <li className={styles.experience__listli}><span>Built custom Wordpress site for a charity based tree conservation company and created an interactive map with pins and a database of 800 trees with a search functionality. Plus I managed and executed the database migration.</span></li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -87,7 +95,11 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Web Designer/Front End Developer</h4>
                                     <p className={styles.experience__job}>Big Marketing Ltd</p>
-                                    <p className={styles.experience__description}>Develop themes and plugins for Wordpress. Design and build responsive websites using the Bootstrap framework. Design and build e-commerce websites using Prestashop, Opencart and WooCommerce. Build content management solutions for websites. On-going design and maintenance of new and existing websites. Domain, website and email management using Plesk. Build car dealership sales event portals. Build HTML emails for email marketing campaigns. Build microsites for marketing campaigns.</p>
+                                    <p className={styles.experience__description}>I worked at Big Marketing within a team of 4 developers, building themes and plugins for Wordpress and building e-commerce sites using Prestashop, Opencart and WooCommerce. All sites were built using the Bootstrap framework.</p>
+                                    <ul className={styles.experience__list}>
+                                        <li className={styles.experience__listli}><span>I built a leaderboard plugin for Wordpress which was used for motor trade quarterly sales incentives. The plugin had a backend with settings for quickly building out a sales incentive micro site in 4 hours.</span></li>
+                                        <li className={styles.experience__listli}><span>I also built an online 'eshot builder' application, with backend settings. The app enabled anyone with no coding knowledge to quickly build an html email, which increased work turnaround for the companies daily client based eshot campaigns.</span></li>
+                                    </ul>
                                 </div>
                             </div>
 
