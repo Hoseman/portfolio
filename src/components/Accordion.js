@@ -72,7 +72,7 @@ function Accordion() {
     {
         title: 'MP Build Website',
         content_title_1: 'Description',
-        content_1: 'A brochure website for a Hertfordshire based construction services company and built as a custom bespoke Wordpress theme',
+        content_1: 'A brochure website for a Hertfordshire based construction services company and built as a custom bespoke Wordpress theme.',
         content_title_2: 'Project Overview',
         content_2: 'The client wanted a design refresh on his current static html website. He also wanted the ability to edit content himself. The new website was re-built as a Wordpress website with a custom bespoke theme build and all content was made editable in the backend via ACF fields.',
         link: 'https://mpbuild.fluidstaging.co.uk',
@@ -82,7 +82,7 @@ function Accordion() {
     {
       title: 'Sales Incentive Website',
       content_title_1: 'Description',
-      content_1: 'A quarterly sales incentive microsite built using a leaderboard custom built Wordpress plugin',
+      content_1: 'A quarterly sales incentive microsite built using a leaderboard custom built Wordpress plugin.',
       content_title_2: 'Project Overview',
       content_2: 'The brief was to build a quarterly sales incentive website pitched for the car sales industry. The challenge was to come up with a solution that involved a quick turnaround for clients with small budgets. I therefore built a leaderborad plugin that enabled a scoreboard system to be quickly added to any Wordpress theme. The plugin has backend settings to add any custom scoring system you wish, and also has the ability to create weekly scoreboards based on time on the server.',
       link: 'https://leaderboard.achcreative.co.uk',
