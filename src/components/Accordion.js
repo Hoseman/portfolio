@@ -4,6 +4,7 @@ import PortfolioImacResorations from '../images/portfolio-imac-restorations.jpg'
 import PortfolioImacTranscreation from '../images/portfolio-imac-transcreation.jpg';
 import PortfolioImacGlasses from '../images/portfolio-imac-glasses.jpg';
 import PortfolioImacMpbuild from '../images/portfolio-imac-mpbuild.jpg';
+import PortfolioImacLeaderboard from '../images/portfolio-imac-leaderboard.jpg';
 import PortfolioImacLila from '../images/portfolio-imac-lila.jpg';
 import PortfolioImacEasy from '../images/portfolio-imac-easy.jpg';
 import PortfolioImacVcm from '../images/portfolio-imac-vcm.jpg';
@@ -77,6 +78,16 @@ function Accordion() {
         link: 'https://mpbuild.fluidstaging.co.uk',
         imageUrl: PortfolioImacMpbuild,
         isOpen: false,
+    },
+    {
+      title: 'Sales Incentive Website',
+      content_title_1: 'Description',
+      content_1: 'A quarterly sales incentive microsite built using a leaderboard custom built Wordpress plugin',
+      content_title_2: 'Project Overview',
+      content_2: 'The brief was to build a quarterly sales incentive website pitched for the car sales industry. The challenge was to come up with a solution that involved a quick turnaround for clients with small budgets. I therefore built a leaderborad plugin that enabled a scoreboard system to be quickly added to any Wordpress theme. The plugin has backend settings to add any custom scoring system you wish, and also has the ability to create weekly scoreboards based on time on the server.',
+      link: 'https://leaderboard.achcreative.co.uk',
+      imageUrl: PortfolioImacLeaderboard,
+      isOpen: false,
     },
     {
         title: 'Lila Jewellery Website',
