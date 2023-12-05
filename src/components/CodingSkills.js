@@ -15,7 +15,7 @@ function CodingSkills() {
     const [skillssass, setskillssass] = useState('10%');
     const [skillsjquery, setskillsjquery] = useState('15%');
 
-    const [skillsreact, setskillsreact] = useState('50%');
+    const [skillsreact, setskillsreact] = useState('55%');
     const [skillswordpress, setskillswordpress] = useState('10%');
 
     const [skillswoocommerce, setskillswoocommerce] = useState('10%');
@@ -164,7 +164,7 @@ function CodingSkills() {
         
             for (let i = 0; i <= frames; i++) {
             setTimeout(() => {
-                const newValue = (i / frames) * 60;
+                const newValue = (i / frames) * 50;
                 setPercentageReact(newValue);
             }, (i / frames) * duration);
             }
@@ -258,7 +258,7 @@ function CodingSkills() {
           if (window.scrollY >= 950) {
             startAnimationReact();
             startAnimationWordpress();
-            setskillsreact('40%');
+            setskillsreact('45%');
             setskillswordpress('8%');
           } else {
             setskillsreact('81%');
