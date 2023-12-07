@@ -75,7 +75,7 @@ function Accordion() {
         content_1: 'A brochure website for a Hertfordshire based construction services company and built as a custom bespoke Wordpress theme.',
         content_title_2: 'Project Overview',
         content_2: 'The client wanted a design refresh on his current static html website. He also wanted the ability to edit content himself. The new website was re-built as a Wordpress website with a custom bespoke theme build and all content was made editable in the backend via ACF fields.',
-        link: 'https://mpbuild.fluidstaging.co.uk',
+        link: 'https://mpbuild.co.uk',
         imageUrl: PortfolioImacMpbuild,
         isOpen: false,
     },
