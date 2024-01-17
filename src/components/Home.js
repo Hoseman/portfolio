@@ -67,6 +67,7 @@ function Home() {
 
 
   return (
+  
     <div className={styles.mycontainer}>
       <div className={styles.mobilemenu}>
           

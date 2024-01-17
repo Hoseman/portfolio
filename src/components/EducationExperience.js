@@ -52,17 +52,17 @@ function EducationExperience() {
                             <div className={styles.experience__card}>
                                 <div className={styles.experience__carddate}>
                                     <span className={styles.experience__timeline}>
-                                        <p className={styles.experience__dateto}><span>Till</span><span> Present</span></p>
+                                        <p className={styles.experience__dateto}><span>Dec</span><span> 2023</span></p>
                                         <p className={styles.experience__datefrom}><span>Mar</span><span> 2023</span></p>
                                     </span>
                                 </div>
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Xigen Ltd</p>
-                                    <p className={styles.experience__description}>I work within a big web development team and help with the maintenance of the companies fleet of client based websites.</p>
+                                    <p className={styles.experience__description}>I worked within a big web development team and help with the maintenance of the companies fleet of client based websites.</p>
                                     <ul className={styles.experience__list}>
                                         <li className={styles.experience__listli}><span>Built a multi-lingual Wordpress website in 20 languages.</span></li>
-                                        <li className={styles.experience__listli}><span>Help maintain the companies fleet of client based websites.</span></li>
+                                        <li className={styles.experience__listli}><span>Helped maintain the companies fleet of client based websites.</span></li>
                                     </ul>
                                 </div>
                             </div>
@@ -77,7 +77,7 @@ function EducationExperience() {
                                 <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Fluid Studios Ltd</p>
-                                    <p className={styles.experience__description}>I worked at Fuid Studios with the technical director and 1 other front end developer, building custom Wordpress sites and Custom WooCommerce sites. All sites built from scratch using BEM methodology.</p>
+                                    <p className={styles.experience__description}>I worked at Fluid Studios with the technical director and 1 other front end developer, building custom Wordpress sites and Custom WooCommerce sites. All sites built from scratch using BEM methodology.</p>
                                     <ul className={styles.experience__list}>
                                         <li className={styles.experience__listli}><span>Built a large scale Woocommerce website for a glasses company from scratch, with customisation of the standard WooCommerce user journey.</span></li>
                                         <li className={styles.experience__listli}><span>Built custom Wordpress site for a charity based tree conservation company and created an interactive map with pins and a database of 800 trees with a search functionality. Plus I managed and executed the database migration.</span></li>
