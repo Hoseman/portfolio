@@ -4,11 +4,11 @@ import PortfolioImacResorations from '../images/portfolio-imac-restorations.jpg'
 import PortfolioImacTranscreation from '../images/portfolio-imac-transcreation.jpg';
 import PortfolioImacGlasses from '../images/portfolio-imac-glasses.jpg';
 import PortfolioImacMpbuild from '../images/portfolio-imac-mpbuild.jpg';
-import PortfolioImacLeaderboard from '../images/portfolio-imac-leaderboard.jpg';
+//import PortfolioImacLeaderboard from '../images/portfolio-imac-leaderboard.jpg';
 import PortfolioImacLila from '../images/portfolio-imac-lila.jpg';
 import PortfolioImacEasy from '../images/portfolio-imac-easy.jpg';
 import PortfolioImacVcm from '../images/portfolio-imac-vcm.jpg';
-import PortfolioImacPhotography from '../images/portfolio-imac-photography.jpg';
+//import PortfolioImacPhotography from '../images/portfolio-imac-photography.jpg';
 import styles from '../style.module.scss';
 
 function AccordionItem({ title, content_title_1, content_1, content_title_2, content_2, link, imageUrl, isOpen, onToggle }) {
