@@ -57,6 +57,23 @@ function EducationExperience() {
                                     </span>
                                 </div>
                                 <div className={styles.experience__carddetails}>
+                                    <h4 className={styles.experience__title}>Full Stack Developer/Website Manager</h4>
+                                    <p className={styles.experience__job}>Universal Science Ltd</p>
+                                    <p className={styles.experience__description}>Employed to develop and maintain the companies Materials Direct WooCommerce website. I work with the managing director to build new features for the website.</p>
+                                    <ul className={styles.experience__list}>
+                                        <li className={styles.experience__listli}><span>Built a large scale custom bespoke delivery options system which enables a customer to be able to book a split and schedule order. The system has its own admin and sends out custom invoices and delivery notes to the customer.</span></li>
+                                        <li className={styles.experience__listli}><span>Built a custom voucher system from scratch to fit within the companys requirements.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className={styles.experience__card}>
+                                <div className={styles.experience__carddate}>
+                                    <span className={styles.experience__timeline}>
+                                        <p className={styles.experience__dateto}><span>Dec</span><span> 2023</span></p>
+                                        <p className={styles.experience__datefrom}><span>Mar</span><span> 2023</span></p>
+                                    </span>
+                                </div>
+                                <div className={styles.experience__carddetails}>
                                     <h4 className={styles.experience__title}>Front End Developer</h4>
                                     <p className={styles.experience__job}>Xigen Ltd</p>
                                     <p className={styles.experience__description}>I worked within a big web development team and help with the maintenance of the companies fleet of client based websites.</p>

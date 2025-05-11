@@ -3,10 +3,12 @@ import PortfolioBlue from '../images/portfolio_blue.svg';
 import PortfolioImacResorations from '../images/portfolio-imac-restorations.jpg';
 import PortfolioImacTranscreation from '../images/portfolio-imac-transcreation.jpg';
 import PortfolioImacGlasses from '../images/portfolio-imac-glasses.jpg';
-import PortfolioImacMpbuild from '../images/portfolio-imac-mpbuild.jpg';
+import PortfolioImacYew from '../images/portfolio-imac-yew.jpg';
+import PortfolioImacSilver from '../images/portfolio-imac-silver.jpg';
+//import PortfolioImacMpbuild from '../images/portfolio-imac-mpbuild.jpg';
 //import PortfolioImacLeaderboard from '../images/portfolio-imac-leaderboard.jpg';
 import PortfolioImacLila from '../images/portfolio-imac-lila.jpg';
-import PortfolioImacEasy from '../images/portfolio-imac-easy.jpg';
+//import PortfolioImacEasy from '../images/portfolio-imac-easy.jpg';
 import PortfolioImacVcm from '../images/portfolio-imac-vcm.jpg';
 //import PortfolioImacPhotography from '../images/portfolio-imac-photography.jpg';
 import styles from '../style.module.scss';
@@ -40,6 +42,16 @@ function AccordionItem({ title, content_title_1, content_1, content_title_2, con
 function Accordion() {
   const [items, setItems] = useState([
     {
+      title: 'The Glasses Company Website',
+      content_title_1: 'Description',
+      content_1: 'A WooCommerce website for a major national UK based glasses company.',
+      content_title_2: 'Project Overview',
+      content_2: 'The client had an old ageing Magento 1 ecommerce site with 1500 products. The brief was to re-build the site in Wordpress/WooCommerce as a responsive mobile friendly website and migrate the data from Magento to WooCommerce.',
+      link: 'https://theglassescompany.co.uk',
+      imageUrl: PortfolioImacGlasses,
+      isOpen: true,
+    },
+    {
       title: 'HC Restorations Website',
       content_title_1: 'Description',
       content_1: 'A brochure website for a Bedfordshire based antique restorer and built as a custom bespoke Wordpress theme.',
@@ -47,7 +59,27 @@ function Accordion() {
       content_2: 'The client had an ageing non-responsive fixed width static HTML website that did not look great in modern browsers and mobile devices. The brief was to initially re-design the website and present drafts to the client. Then on approval build a more modern responsive wordpress theme that looked great on mobile and to ensure that all content was editable in the backend.',
       link: 'https://hcrestorations.co.uk',
       imageUrl: PortfolioImacResorations,
-      isOpen: true,
+      isOpen: false,
+    },
+    {
+      title: 'Ancient Yew Group Website',
+      content_title_1: 'Description',
+      content_1: 'A custom Wordpress website for a charity based tree conservation company.',
+      content_title_2: 'Project Overview',
+      content_2: 'The client had a old website with a database of 8000 yew tree entries. The brief was to rebuild the site and execute the data migration into Wordpress and then build a comprehensive search feature and interative map.',
+      link: 'https://https://www.ancient-yew.org',
+      imageUrl: PortfolioImacYew,
+      isOpen: false,
+    },
+    {
+      title: 'Silverwood Music School',
+      content_title_1: 'Description',
+      content_1: 'A custom built website for a music teacher based in Sheffield.',
+      content_title_2: 'Project Overview',
+      content_2: 'The client run a very successful music teaching business but her online presence was almost none existent. My brief was to build a professional website to generate more leads for her business. I also worked on the SEO to get her top 3 rankings for most of her teaching categories.',
+      link: 'https://silverwoodmusicschool.uk',
+      imageUrl: PortfolioImacSilver,
+      isOpen: false,
     },
     {
       title: 'Transcreation Website',
@@ -59,26 +91,16 @@ function Accordion() {
       imageUrl: PortfolioImacTranscreation,
       isOpen: false,
     },
-    {
-      title: 'The Glasses Company Website',
-      content_title_1: 'Description',
-      content_1: 'A WooCommerce website for a major national UK based glasses company.',
-      content_title_2: 'Project Overview',
-      content_2: 'The client had an old ageing Magento 1 ecommerce site with 1500 products. The brief was to re-build the site in Wordpress/WooCommerce as a responsive mobile friendly website and migrate the data from Magento to WooCommerce.',
-      link: 'https://theglassescompany.co.uk',
-      imageUrl: PortfolioImacGlasses,
-      isOpen: false,
-    },
-    {
-        title: 'MP Build Website',
-        content_title_1: 'Description',
-        content_1: 'A brochure website for a Hertfordshire based construction services company and built as a custom bespoke Wordpress theme.',
-        content_title_2: 'Project Overview',
-        content_2: 'The client wanted a design refresh on his current static html website. He also wanted the ability to edit content himself. The new website was re-built as a Wordpress website with a custom bespoke theme build and all content was made editable in the backend via ACF fields.',
-        link: 'https://mpbuild.co.uk',
-        imageUrl: PortfolioImacMpbuild,
-        isOpen: false,
-    },
+    // {
+    //     title: 'MP Build Website',
+    //     content_title_1: 'Description',
+    //     content_1: 'A brochure website for a Hertfordshire based construction services company and built as a custom bespoke Wordpress theme.',
+    //     content_title_2: 'Project Overview',
+    //     content_2: 'The client wanted a design refresh on his current static html website. He also wanted the ability to edit content himself. The new website was re-built as a Wordpress website with a custom bespoke theme build and all content was made editable in the backend via ACF fields.',
+    //     link: 'https://mpbuild.co.uk',
+    //     imageUrl: PortfolioImacMpbuild,
+    //     isOpen: false,
+    // },
     // {
     //   title: 'Sales Incentive Website',
     //   content_title_1: 'Description',
@@ -99,16 +121,16 @@ function Accordion() {
         imageUrl: PortfolioImacLila,
         isOpen: false,
     },
-    {
-        title: 'Easy Cleaning Website',
-        content_title_1: 'Description',
-        content_1: 'A brochure website for a Hertfordshire based cleaning company and built as a custom bespoke Wordpress theme.',
-        content_title_2: 'Project Overview',
-        content_2: 'The client had recently undergone a complete corporate rebrand and they wanted their new website to mirror their new printed collateral. They also wanted the ability to edit content themselves. The new website was re-built as a Wordpress website with a custom bespoke theme build and all content was made editable in the backend via ACF fields. ',
-        link: 'https://easycleaning.fluidstaging.co.uk',
-        imageUrl: PortfolioImacEasy,
-        isOpen: false,
-    },
+    // {
+    //     title: 'Easy Cleaning Website',
+    //     content_title_1: 'Description',
+    //     content_1: 'A brochure website for a Hertfordshire based cleaning company and built as a custom bespoke Wordpress theme.',
+    //     content_title_2: 'Project Overview',
+    //     content_2: 'The client had recently undergone a complete corporate rebrand and they wanted their new website to mirror their new printed collateral. They also wanted the ability to edit content themselves. The new website was re-built as a Wordpress website with a custom bespoke theme build and all content was made editable in the backend via ACF fields. ',
+    //     link: 'https://easycleaning.fluidstaging.co.uk',
+    //     imageUrl: PortfolioImacEasy,
+    //     isOpen: false,
+    // },
     {
         title: 'VCM Publications Website',
         content_title_1: 'Description',
