@@ -52,8 +52,8 @@ function EducationExperience() {
                             <div className={styles.experience__card}>
                                 <div className={styles.experience__carddate}>
                                     <span className={styles.experience__timeline}>
-                                        <p className={styles.experience__dateto}><span>Dec</span><span> 2023</span></p>
-                                        <p className={styles.experience__datefrom}><span>Mar</span><span> 2023</span></p>
+                                        <p className={styles.experience__dateto}><span>Till</span><span> Present</span></p>
+                                        <p className={styles.experience__datefrom}><span>Feb</span><span> 2024</span></p>
                                     </span>
                                 </div>
                                 <div className={styles.experience__carddetails}>
@@ -69,7 +69,7 @@ function EducationExperience() {
                             <div className={styles.experience__card}>
                                 <div className={styles.experience__carddate}>
                                     <span className={styles.experience__timeline}>
-                                        <p className={styles.experience__dateto}><span>Dec</span><span> 2023</span></p>
+                                        <p className={styles.experience__dateto}><span>Feb</span><span> 2024</span></p>
                                         <p className={styles.experience__datefrom}><span>Mar</span><span> 2023</span></p>
                                     </span>
                                 </div>
