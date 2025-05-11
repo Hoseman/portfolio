@@ -66,7 +66,7 @@ function Accordion() {
       content_title_1: 'Description',
       content_1: 'A custom Wordpress website for a charity based tree conservation company.',
       content_title_2: 'Project Overview',
-      content_2: 'The client had a old website with a database of 8000 yew tree entries. The brief was to rebuild the website as a responsive custom bespoke them and then execute the data migration into Wordpress and then build a comprehensive search feature and interative map.',
+      content_2: 'The client owned an old website with a database of 8000 yew tree entries. The brief was to rebuild the website as a responsive custom bespoke theme and then execute the data migration into Wordpress and then build a comprehensive search feature and interative map.',
       link: 'https://https://www.ancient-yew.org',
       imageUrl: PortfolioImacYew,
       isOpen: false,
