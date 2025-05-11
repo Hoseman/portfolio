@@ -76,7 +76,7 @@ function Accordion() {
       content_title_1: 'Description',
       content_1: 'A custom built website for a music teacher based in Sheffield.',
       content_title_2: 'Project Overview',
-      content_2: 'The client owns a very successful music teaching business but her online presence was originally almost none existent. My brief was to build a professional website to generate more leads for her business. I also worked on the SEO to get her top 3 rankings for most of her teaching categories and get her more valued customers',
+      content_2: 'The client owns a very successful music teaching business but her online presence was originally almost none existent. My brief was to build a professional website to generate more leads for her business. I also worked on the SEO to get her top 3 rankings for most of her teaching categories and get her more valued customers.',
       link: 'https://silverwoodmusicschool.uk',
       imageUrl: PortfolioImacSilver,
       isOpen: false,
